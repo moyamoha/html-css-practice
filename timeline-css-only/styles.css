@@ -30,3 +30,7 @@ body {
   top: 22px;
   left: 18px;
 }
+
+.event:last-child::before {
+  display: none;
+}
