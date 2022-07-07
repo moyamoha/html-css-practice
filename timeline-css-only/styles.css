@@ -3,19 +3,30 @@ body {
 }
 
 .timeline {
-
+  border: 1px solid salmon;
+  padding: 20px;
+  z-index: -10;
 }
 
 .event {
   position: relative;
-  height: 70px;
+  height: 50px;
+  max-height: 50px;
+  padding-left: 50px;
+  z-index: -10;
 }
 
+.timestamp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
 .event::before {
   content: "";
-  height: 60px;
-  border: 0.5px solid #aaa;
+  height: 42px;
+  border: 0.5px solid #cdcdcd;
   position: absolute;
-  top: 20px;
-  left: 10px;
+  top: 22px;
+  left: 18px;
 }
