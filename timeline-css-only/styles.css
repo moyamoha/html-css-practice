@@ -22,6 +22,7 @@ body {
   left: 0;
   z-index: 100;
 }
+
 .event::before {
   content: "";
   height: 42px;
@@ -29,8 +30,4 @@ body {
   position: absolute;
   top: 22px;
   left: 18px;
-}
-
-.event:last-child::before {
-  display: none;
 }
