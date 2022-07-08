@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D25B70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.ray {
+  width: 10px;
+  height: 100px;
+  background: #F2E09F;
+  border-radius: 10px;
+  position: absolute;
+  transform-origin: bottom;
+  --rotate: 30deg;
+}
+.a {
+  transform: rotate(calc(var(--rotate) * 3 * -1));
+  left: -20px;
+}
+.b {
+  left: -16px;
+  top: -10px;
+  transform: rotate(calc(var(--rotate) * 2 * -1))
+}
+
+.c {
+  left: -10px;
+  top: -18px;
+  transform: rotate(calc(var(--rotate) * -1))
+}
+.d {
+  top: -20px;
+  transform: rotate(calc(var(--rotate) * 0))
+}
+.e {
+  top: -18px;
+  bottom: -10px;
+  left: 10px;
+  transform: rotate(calc(var(--rotate) * 1))
+}
+.f {
+  transform: rotate(calc(var(--rotate) * 2));
+  top: -10px;
+  left: 18px;
+}
+
+.g {
+  left: 20px;
+  transform: rotate(calc(var(--rotate) * 3))
+}
