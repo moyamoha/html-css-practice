@@ -58,11 +58,11 @@ body {
   /* margin: 1px 0; */
 }
 
-.eye .eye-lid.top {
+.eye .eye-lid.upper {
   top: -10px;
 }
 
-.eye .eye-lid.bottom{
+.eye .eye-lid.lower{
   bottom: -10px;
 }
 
