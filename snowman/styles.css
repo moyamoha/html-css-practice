@@ -46,6 +46,24 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 18px;
+  overflow: hidden;
+  border-width: 2px solid #0E1F2B;
+}
+
+.eye-lid {
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  background-color: #FFFFFF;
+  /* margin: 1px 0; */
+}
+
+.eye .eye-lid.top {
+  top: -10px;
+}
+
+.eye .eye-lid.bottom{
+  bottom: -10px;
 }
 
 .eye.left {
