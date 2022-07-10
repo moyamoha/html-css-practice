@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #0B2429;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  background: #F3AC3C;
+  position: absolute;
+  border-radius: 50% 0 50% 50%;
+}
+
+.top {
+  z-index: -1;
+  border-radius: 50%;
+  top: 20px;
+  right: 72px;
+}
+
+.middle {
+  background: #998235;
+  top: 82px;
+  right: 132px;
+}
+
+.bottom {
+  top: 142px;
+  right: 192px;
+  z-index: 1;
+}
