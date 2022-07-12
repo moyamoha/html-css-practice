@@ -1,0 +1,82 @@
+body, .container, .box, .elipse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #000000;
+}
+
+.container {
+  background: #E96A23;
+  width: 300px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  background: #000000;
+  border-radius: 12px;
+  width: 240px;
+  height: 120px;
+  position: relative;
+  z-index: 1;
+}
+
+.elipse {
+  border: 5px solid #EBAE11;
+  border-radius: 50%;
+}
+
+.outer {
+  width: 200px;
+  height: 80px;
+}
+
+.inner {
+  width: 120px;
+  height: 60px;
+}
+
+.circle {
+  background: #EBAE11;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.box::before, .box::after {
+  content: "";
+  position: absolute;
+  background: inherit;
+  height: 90px;
+  width: 25px;
+  border-radius: 12px;
+  right: -15px;
+}
+
+.box::before {
+  left: -15px;
+}
+
+.container::before, .container::after {
+  content: "";
+  position: absolute;
+  height: 1100%;
+  background: #EBAE11;
+  transform: rotate(15deg);
+}
+
+.container::before {
+  width: 50px;
+  right: 145px;
+}
+
+.container::after {
+  width: 24px;
+  right: 105px;
+}
