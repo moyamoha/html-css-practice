@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #191919;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skull {
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 100px;
+  background: #4F77FF;
+  border-radius: 100px 100px 16px 16px;
+}
+
+.eye {
+  background: #191919;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 53%;
+  left: 13%;
+}
+.eye:nth-child(2) {
+  top: 53%;
+  left: calc(13% + 49px);
+}
+
+.nose {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background: #191919;
+  bottom: -11px;
+  left: calc(50% - 10px);
+  z-index: 1;
+}
+
+.jaw {
+  position: absolute;
+  height: 30px;
+  background: #4F77FF;
+  bottom: -30px;
+  width: 80px;
+  left: 20px;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.tooth {
+  height: 10px;
+  width: 10px;
+  background: #191919;
+  border-radius: 5px 5px 0 0;
+}
