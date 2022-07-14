@@ -1,0 +1,53 @@
+body {
+  background-color: #293462;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask {
+  background-color: #FFF1C1;
+  height: 100px;
+  width: 150px;
+  position: relative;
+   border-radius: 0 0 50px 50px;
+}
+
+.circle, .rect {
+  position: absolute;
+  background-color: #FE5F55;
+  width: 40px;
+}
+
+.circle {
+  height: 40px;
+  top: calc(50% - 10px);
+  border-radius: 50%;
+  right: 20px;
+}
+
+.rect {
+  height: 10px;
+  left: 20px;
+  top: 20px;
+  border-radius: 10px;
+}
+
+.rect:nth-child(2) {
+  top: 40px;
+}
+
+.mask::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 40px;
+  width: 250px;
+  z-index: -1;
+  background-color: #293462;
+  border: 10px solid #FFF1C1;
+  border-radius: 100px;
+  left: -60px;
+}
