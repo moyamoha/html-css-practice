@@ -1,0 +1,46 @@
+body {
+  background-color: #191919;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stairs {
+  position: relative;
+  background: #4F77FF;
+  height: 150px;
+  width: 100px;
+  border-radius: 50px 50px 0 0;
+  overflow: hidden;
+}
+
+.stair {
+  height: 20px;
+  width: 100%;
+  background: #191919;
+  position: absolute;
+  --l: 20px;
+--b: 20px;
+}
+
+.stair:nth-child(1) {
+  bottom: calc(var(--b) - 20px);
+  left: calc(var(--l));
+}
+
+.stair:nth-child(2) {
+  bottom: calc(var(--b) + 4px);
+  left: calc(var(--l) * 2);
+}
+
+.stair:nth-child(3) {
+  bottom: calc((var(--b) + 4px) * 2);
+  left: calc(var(--l) * 3);
+}
+
+ .stair:nth-child(4) {
+  bottom: calc((var(--b) + 4px) * 3);
+  left: calc(var(--l) * 4);
+}
