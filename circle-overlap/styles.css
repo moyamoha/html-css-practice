@@ -1,0 +1,43 @@
+body {
+  background-color: #09042A;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 150px;
+  width: 400px;
+  position: relative;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.left {
+  background-color: #7B3F61;
+  left: 75px;
+}
+
+.right {
+  background-color: #E78481;
+  right: 75px;
+}
+
+.left::after {
+  content: "";
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: #09042A;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+}
