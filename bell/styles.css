@@ -1,0 +1,38 @@
+body {
+  background: #191919;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  width: 120px;
+  height: 120px;
+  background: #E08027;
+  border-radius: 100px 100px 16px 16px;
+  position: relative;
+}
+
+.a::before, .a::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.a::before {
+  background: #F2AD43;
+  left: 35px;
+  top: -24px;
+  z-index: -1;
+}
+
+.a::after {
+  background: #824B20;
+  left: 35px;
+  top: 95px;
+  z-index: -1;
+}
