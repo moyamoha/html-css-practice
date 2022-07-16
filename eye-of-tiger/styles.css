@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0B2429;
+  margin: 0;
+  height: 100vh;
+}
+
+body, .eye, .iris {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye {
+  background: #998235;
+  height: 200px;
+  width: 200px;
+  border-radius: 0 50% 0 50%;
+  transform: rotate(-45deg);
+}
+
+.iris {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: #F3AC3C;
+  border: 20px solid #0B2429;
+}
+
+.pupil {
+  background: #0B2429;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
