@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191919;
+}
+
+.earth {
+  background: #4F77FF;
+  border-radius: 50%;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+
+.lat, .g , .lon {
+  position: absolute;
+}
+
+.lat {
+  box-sizing: border-box;
+  height: 210px;
+  width: 210px;
+  border: 10px solid #191919;
+  border-radius: 50%;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lat:nth-child(2) {
+  left: -91px;
+}
+
+.g {
+  background: #191919;
+  width: 10px;
+  height: 100%;
+  left: 70px;
+}
+
+.lon {
+  width: 100%;
+  height: 10px;
+  background: #191919;
+  --t: 30px;
+  top: var(--t);
+}
+
+.lon.m {
+  top: calc(var(--t) + 40px);
+}
+
+.lon.b {
+  top: calc(var(--t) + 2 * 40px);
+}
