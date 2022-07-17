@@ -1,0 +1,35 @@
+body {
+  background: #0B2429;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trail {
+  position: relative;
+  height: 150px;
+  width: 250px;
+}
+
+.leaf {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px 0 100px 0;
+  position: absolute;
+}
+
+.green {
+  background: #1A4341;
+}
+
+.sycamore {
+  background: #998235;
+  left: 50px;
+}
+
+.saffron {
+  background: #F3AC3C;
+  left: 100px;
+}
