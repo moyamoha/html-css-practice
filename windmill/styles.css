@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  height: 300px;
+  width: 400px;
+}
+
+.y, .b {
+  width: 100px;
+  height: 50px;
+  border-radius: 100px 100px 0 0;
+  position: absolute;
+}
+
+.y {
+  background: #F9E492;
+}
+
+.b {
+  background: #4F77FF;
+}
+
+.y.up {
+  top: 100px;
+  left: 100px;
+}
+
+.y.down {
+  transform: rotate(180deg);
+  top: 150px;
+  left: 200px;
+}
+
+.b.up {
+  transform: rotate(90deg);
+  top: 75px;
+  left: 175px;;
+}
+
+.b.down {
+  transform: rotate(-90deg);
+  top: 175px;
+  left: 125px;
+}
